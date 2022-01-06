@@ -1,3 +1,3 @@
 # action_test
 
-Testinf Github Action
+Testing Github Action
