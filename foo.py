@@ -1,2 +1,2 @@
-print ("HELLOOO9999999")
+print("HELLOOO9999999")
 ff;
