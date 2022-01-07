@@ -14,6 +14,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: docker run --rm docker/whalesay cowsay ${{ github.action }}
+      - run: docker run --rm docker/whalesay cowsay ${{ github.actor }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
