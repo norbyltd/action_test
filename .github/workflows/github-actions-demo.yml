@@ -13,7 +13,7 @@ jobs:
       - run: docker run --rm docker/whalesay cowsay ${{ github.action }}
       - run: echo "This job's status is ${{ job.status }}."
   windows:
-    runs-on: windows-latest
+    runs-on: macos-latest
     steps:
       - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
       - name: Check out repository code
