@@ -5,15 +5,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Check out repository code
+        uses: actions/checkout@v2
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
       - run: docker run --rm docker/whalesay cowsay ${{ github.action }}
       - run: echo "This job's status is ${{ job.status }}."
   windows:
-    runs-on: windows
+    runs-on: windows-latest
     steps:
       - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Check out repository code
+        uses: actions/checkout@v2
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
